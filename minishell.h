@@ -14,5 +14,7 @@
 # define MINSHELL_H
 
 # include <libft.h>
+# include <vector.h>
+# include <stdlib.h>
 
 #endif

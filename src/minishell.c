@@ -11,9 +11,23 @@
 /* ************************************************************************** */
 
 #include <minishell.h>
+#include <unistd.h>
 
 int		main(void)
 {
-	ft_putstr("hello world!\n");
-	return (0);
+  char	*remaindor;
+  char	*line;
+
+  remaindor = NULL;
+  while (get_next_line(&line, &remaindor))
+  {
+	  ft_putstr("\e[1m");
+	  ft_putstr(line);
+	  ft_putstr("\e[0m");
+	  ft_putchar('\n');
+	  free(line);
+	  sleep(3);
+  }
+  free(line);
+  return (0);
 }

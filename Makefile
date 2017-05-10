@@ -24,7 +24,7 @@ SRC = \
 
 OBJ = $(SRC:.c=.o)
 
-HEADERS = -I $(INCLUDES) -I $(LIBFT_DIR)
+HEADERS = -I $(INCLUDES) -I $(LIBFT_DIR)/includes
 
 CFLAGS = -Wall -Wextra -Werror -g
 
